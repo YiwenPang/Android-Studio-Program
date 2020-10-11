@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageScaleActivity">
+
+    <ImageView
+        android:id="@+id/iv_scale"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:background="#EDEDED"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tupian"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <Button
+        android:id="@+id/btn_center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bt_drawable"
+        android:text="CENTER"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_fitEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_fitEnd"
+        app:layout_constraintTop_toTopOf="@+id/btn_fitEnd"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_fitcenter"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bt_drawable"
+        android:text="FIT_CENTER"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/btn_centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/btn_centerInside"
+        app:layout_constraintTop_toTopOf="@+id/btn_centerInside" />
+
+    <Button
+        android:id="@+id/btn_centerCrop"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bt_drawable"
+        android:text="CENTER_CROP"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_fitcenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_fitcenter"
+        app:layout_constraintTop_toTopOf="@+id/btn_fitcenter" />
+
+    <Button
+        android:id="@+id/btn_centerInside"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bt_drawable"
+        android:text="CENTER_INSIDE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_fitcenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_scale"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <Button
+        android:id="@+id/btn_fitXY"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bt_drawable"
+        android:text="FIX_XY"
+        app:layout_constraintEnd_toStartOf="@+id/btn_fitStart"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_centerInside" />
+
+    <Button
+        android:id="@+id/btn_fitStart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bt_drawable"
+        android:text="FIT_START"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/btn_fitEnd"
+        app:layout_constraintStart_toEndOf="@+id/btn_fitXY"
+        app:layout_constraintTop_toTopOf="@+id/btn_fitXY" />
+
+    <Button
+        android:id="@+id/btn_fitEnd"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bt_drawable"
+        android:text="FIT_END"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_fitStart"
+        app:layout_constraintEnd_toStartOf="@+id/btn_center"
+        app:layout_constraintStart_toEndOf="@+id/btn_fitStart"
+        app:layout_constraintTop_toTopOf="@+id/btn_fitStart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

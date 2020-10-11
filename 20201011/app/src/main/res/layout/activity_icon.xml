@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Icon">
+
+    <Button
+        android:id="@+id/btn_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:drawablePadding="5dp"
+        android:text="这是个按钮"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"/>
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bt_drawable"
+        android:text="Left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_top"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_icon" />
+
+    <Button
+        android:id="@+id/btn_top"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bt_drawable"
+        android:text="top"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_left"
+        app:layout_constraintEnd_toStartOf="@+id/btn_right"
+        app:layout_constraintStart_toEndOf="@+id/btn_left"
+        app:layout_constraintTop_toTopOf="@+id/btn_left"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bt_drawable"
+        android:text="right"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_top"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bottom"
+        app:layout_constraintStart_toEndOf="@+id/btn_top"
+        app:layout_constraintTop_toTopOf="@+id/btn_top"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_bottom"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bt_drawable"
+        android:text="Buttom"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_right"
+        app:layout_constraintTop_toTopOf="@+id/btn_right"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
