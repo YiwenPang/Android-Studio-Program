@@ -195,7 +195,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this, "请输入正确的手机号", Toast.LENGTH_SHORT).show();
                 return;
             }
-            if (rb_verifycode.isChecked()) { // 选择了验证码方式校验，此时要生成六位随机数字验证码
+            if (rb_password.isChecked()) { // 选择了密码方式校验，此时要跳到找回密码页面
+                Intent intent = new Intent(this, LoginForgetActivity.class);
+                // 携带手机号码跳转到找回密码页面
+                intent.putExtra("phone", phone);
+                startActivityForResult(intent, mRequestCode);
+            }else if (rb_verifycode.isChecked()) { // 选择了验证码方式校验，此时要生成六位随机数字验证码
                 // 生成六位随机数字的验证码,结果用0填充
                 mVerifyCode = String.format("%06d", (int) ((Math.random() * 9 + 1) * 100000));
                 // 弹出提醒对话框，提示用户六位验证码数字
