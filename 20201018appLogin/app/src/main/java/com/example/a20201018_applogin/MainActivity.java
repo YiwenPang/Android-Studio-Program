@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText et_password;
     private Button btn_forget;
     private Button btn_login;
+    private Button btn_signup;
     private Switch ck_remember;
 
     private int mRequestCode = 0;
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         et_password = findViewById(R.id.et_password);
         btn_forget = findViewById(R.id.btn_forget);
         btn_login = findViewById(R.id.btn_login);
+        btn_signup = findViewById(R.id.btn_signup);
         ck_remember = findViewById(R.id.ck_remember);
 
         rg_login.setOnCheckedChangeListener(new RadioListener());
@@ -71,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn_forget.setOnClickListener(this);
         btn_login.setOnClickListener(this);
+        btn_signup.setOnClickListener(this);
 
         initTypeSpinner();
 
@@ -193,6 +196,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 } else {
                     loginSuccess();
                 }
+            }
+        } else if (v.getId() == R.id.btn_signup){
+            if (rb_password.isChecked()) {
+                Intent intent = new Intent(this, SQLiteWriteActivity.class);
+                startActivityForResult(intent, mRequestCode);
             }
         }
     }
