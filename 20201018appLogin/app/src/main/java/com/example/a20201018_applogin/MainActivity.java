@@ -80,6 +80,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mShared = getSharedPreferences("share_login", MODE_PRIVATE);
         et_password.setOnFocusChangeListener(this);
 
+        mShared=getSharedPreferences("share_login",MODE_PRIVATE);
+        String phone=mShared.getString("phone","");
+        String password=mShared.getString("password","");
+        et_phone.setText(phone);
+        et_password.setText(password);
+
     }
 
     private String[] typeArray = {"个人用户", "公司用户","18990160 庞怡文"};
