@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleDetailActivity">
+
+    <include
+        layout="@layout/title_schedule"
+        app:layout_constraintBottom_toTopOf="@+id/sv_schedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/sv_schedule"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_schedule">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="当前日期："
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/schedule_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="日程时间："
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/schedule_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="提醒间隔："
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <Spinner
+                    android:id="@+id/schedule_alarm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="日程标题："
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/schedule_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:background="@drawable/editext_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="日程内容："
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/schedule_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:gravity="left|top"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:background="@drawable/editext_selector" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
