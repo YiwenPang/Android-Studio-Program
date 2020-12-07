@@ -10,9 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".RecyclerStaggeredActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".RecyclerGridActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclerLinearActivity"
+            android:exported="true" />
+        <activity
             android:name=".BannerTopActivity"
             android:exported="true"
-            android:theme="@style/AppCompatTheme"></activity>
+            android:theme="@style/AppCompatTheme" />
         <activity
             android:name=".TabLayoutActivity"
             android:exported="true"
