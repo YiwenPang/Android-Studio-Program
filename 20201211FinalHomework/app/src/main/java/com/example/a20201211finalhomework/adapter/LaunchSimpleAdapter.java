@@ -16,6 +16,7 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.a20201211finalhomework.MainActivity;
 import com.example.a20201211finalhomework.R;
+import com.example.a20201211finalhomework.TabFragmentActivity;
 
 import java.util.ArrayList;
 
@@ -52,7 +53,7 @@ public class LaunchSimpleAdapter extends PagerAdapter {
                 btn_start.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(mContext, MainActivity.class);
+                        Intent intent = new Intent(mContext, TabFragmentActivity.class);
                         mContext.startActivity(intent);
                     }
                 });

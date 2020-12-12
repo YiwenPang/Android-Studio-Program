@@ -177,6 +177,7 @@ public class TabFragmentActivity extends AppCompatActivity {
         return true;
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();

@@ -6,15 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".TabSecondActivity">
 
-    <TextView
-        android:id="@+id/tv_second"
-        android:layout_width="0dp"
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_shopping_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:gravity="bottom|center"
-        android:textColor="#000000"
-        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <LinearLayout
+            android:id="@+id/ll_channel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" />
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
