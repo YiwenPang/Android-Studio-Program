@@ -97,6 +97,7 @@ public class CartDBHelper extends SQLiteOpenHelper {
     // 往该表添加一条记录
     public long insert(CartInfo info) {
         ArrayList<CartInfo> infoArray = new ArrayList<CartInfo>();
+        //These codes are from Peter Pang.
         infoArray.add(info);
         return insert(infoArray);
     }

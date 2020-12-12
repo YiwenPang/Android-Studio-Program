@@ -67,4 +67,4 @@ public class GoodsInfo2 {
         }
         return goodsList;
     }
-}
+}//These codes are from Peter Pang.

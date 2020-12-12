@@ -97,6 +97,7 @@ public class RecyclerStaggeredAdapter extends RecyclerView.Adapter<ViewHolder> i
             super(v);
             ll_item = v.findViewById(R.id.ll_item);
             iv_pic = v.findViewById(R.id.iv_pic);
+            //These codes are from Peter Pang.
             tv_title = v.findViewById(R.id.tv_title);
         }
     }

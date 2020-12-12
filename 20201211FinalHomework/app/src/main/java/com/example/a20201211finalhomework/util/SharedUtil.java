@@ -29,4 +29,4 @@ public class SharedUtil {
     public String readShared(String key, String defaultValue) {
         return mShared.getString(key, defaultValue);
     }
-}
+}//These codes are from Peter Pang.

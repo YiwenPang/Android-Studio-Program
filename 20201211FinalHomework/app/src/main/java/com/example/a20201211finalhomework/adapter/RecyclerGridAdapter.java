@@ -97,6 +97,7 @@ public class RecyclerGridAdapter extends RecyclerView.Adapter<ViewHolder> implem
     private OnItemClickListener mOnItemClickListener;
 
     public void setOnItemClickListener(RecyclerGridAdapter listener) {
+        //These codes are from Peter Pang.
         this.mOnItemClickListener = listener;
     }
 

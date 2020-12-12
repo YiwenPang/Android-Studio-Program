@@ -65,4 +65,4 @@ public class SearchResultActvity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-}
+}//These codes are from Peter Pang.

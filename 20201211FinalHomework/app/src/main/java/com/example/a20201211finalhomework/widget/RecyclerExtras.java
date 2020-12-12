@@ -19,4 +19,4 @@ public class RecyclerExtras {
         void onItemDeleteClick(View view, int position);
     }
 
-}
+}//These codes are from Peter Pang.

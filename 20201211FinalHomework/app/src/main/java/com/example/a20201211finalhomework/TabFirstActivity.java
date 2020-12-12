@@ -13,4 +13,4 @@ public class TabFirstActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_tab_first);
     }
-}
+}//These codes are from Peter Pang.

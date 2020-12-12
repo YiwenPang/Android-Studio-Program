@@ -97,6 +97,7 @@ public class GoodsDBHelper extends SQLiteOpenHelper {
 
     // 往该表添加一条记录
     public long insert(GoodsInfo2 info) {
+        //These codes are from Peter Pang.
         ArrayList<GoodsInfo2> infoArray = new ArrayList<GoodsInfo2>();
         infoArray.add(info);
         return insert(infoArray);

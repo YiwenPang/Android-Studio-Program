@@ -97,6 +97,7 @@ public class TabSecondFragment extends Fragment{
         // 获取共享参数保存的购物车中的商品数量
         mCount = Integer.parseInt(SharedUtil.getIntance(mContext).readShared("count", "0"));
         tv_count.setText("" + mCount);
+        //These codes are from Peter Pang.
         // 获取商品数据库的帮助器对象
         mGoodsHelper = GoodsDBHelper.getInstance(mContext, 1);
         // 打开商品数据库的读连接

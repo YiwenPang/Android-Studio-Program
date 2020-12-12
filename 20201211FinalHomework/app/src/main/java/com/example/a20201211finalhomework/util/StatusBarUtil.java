@@ -97,6 +97,7 @@ public class StatusBarUtil {
         ViewGroup contentView = window.findViewById(Window.ID_ANDROID_CONTENT);
         View child = contentView.getChildAt(0);
         if (TAG_MARGIN_ADDED.equals(child.getTag())) {
+            //These codes are from Peter Pang.
             FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) child.getLayoutParams();
             // 移除的间隔大小就是状态栏的高度
             params.topMargin -= getStatusBarHeight(activity);

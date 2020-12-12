@@ -34,4 +34,4 @@ public class MainApplication extends Application {
 
     // 声明一个公共的图标映射对象，
     public HashMap<Long, Bitmap> mIconMap = new HashMap<Long, Bitmap>();
-}
+}//These codes are from Peter Pang.

@@ -19,4 +19,4 @@ public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
         outRect.bottom = space; // 上方空白间隔
         outRect.top = space; // 下方空白间隔
     }
-}
+}//These codes are from Peter Pang.

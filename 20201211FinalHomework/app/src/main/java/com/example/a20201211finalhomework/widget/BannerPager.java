@@ -97,6 +97,7 @@ public class BannerPager extends RelativeLayout implements View.OnClickListener 
     }
 
     // 设置选中单选组内部的哪个单选按钮
+    //These codes are from Peter Pang.
     private void setButton(int position) {
         ((RadioButton) rg_indicator.getChildAt(position)).setChecked(true);
     }

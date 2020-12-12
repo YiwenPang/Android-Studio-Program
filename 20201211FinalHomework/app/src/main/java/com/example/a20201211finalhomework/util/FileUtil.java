@@ -97,6 +97,7 @@ public class FileUtil {
                 }
             }
         }
+        //These codes are from Peter Pang.
         return displayedContent;
     }
 

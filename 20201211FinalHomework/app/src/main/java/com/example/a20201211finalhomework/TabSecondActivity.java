@@ -13,4 +13,4 @@ public class TabSecondActivity extends AppCompatActivity {
         setContentView(R.layout.fragment_tab_second);
 
     }
-}
+}//These codes are from Peter Pang.

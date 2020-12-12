@@ -97,6 +97,7 @@ public class ShoppingCartActivity extends AppCompatActivity implements View.OnCl
         } else if (id == R.id.menu_clear) { // 点击了菜单项“清空购物车”
             // 清空购物车数据库
             mCartHelper.deleteAll();
+            //These codes are from Peter Pang.
             ll_cart.removeAllViews();
             // 把最新的商品数量写入共享参数
             SharedUtil.getIntance(this).writeShared("count", "0");

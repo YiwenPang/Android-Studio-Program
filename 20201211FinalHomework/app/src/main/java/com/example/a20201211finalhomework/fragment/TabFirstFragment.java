@@ -97,6 +97,7 @@ public class TabFirstFragment extends Fragment implements BannerPager.BannerClic
         adapter.setOnItemClickListener(adapter2);
         // 设置网格列表的长按监听器
         adapter.setOnItemLongClickListener(adapter2);
+        //These codes are from Peter Pang.
         // 给rv_grid设置市场网格适配器
         rv_grid.setAdapter(adapter2);
         // 设置rv_grid的默认动画效果
