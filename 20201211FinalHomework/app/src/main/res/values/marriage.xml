@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="marriage">
+        <item>未婚</item>
+        <item>已婚</item>
+    </string-array>
+</resources>
