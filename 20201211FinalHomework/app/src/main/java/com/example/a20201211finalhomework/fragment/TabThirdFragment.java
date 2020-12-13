@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.Group;
 import androidx.fragment.app.Fragment;
 
+import com.example.a20201211finalhomework.MainActivity;
 import com.example.a20201211finalhomework.MainApplication;
 import com.example.a20201211finalhomework.R;
 
@@ -101,11 +102,8 @@ public class TabThirdFragment extends Fragment implements View.OnClickListener, 
             Intent intent = new Intent(mContext, TabFragmentActivity.class);
             startActivity(intent);
         } else if (v.getId() == R.id.btn_settle) { // 点击了“结算”按钮
-            AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-            builder.setTitle("结算商品");
-            builder.setMessage("客官抱歉，支付功能尚未开通，请下次再来");
-            builder.setPositiveButton("我知道了", null);
-            builder.create().show();
+            Intent intent = new Intent(mContext, MainActivity.class);
+            startActivity(intent);
         }
     }
 

@@ -43,14 +43,14 @@ public class GoodsInfo2 {
             "华为 P40 Pro 全网通 8GB+512GB"
     };
     // 声明一个手机商品的价格数组
-    private static float[] mPriceArray = {7599, 11099, 4099, 2499, 6999, 3099,7999,7388};
+    private static float[] mPriceArray = {7599, 11099, 4099, 2499, 6999, 3099, 7999, 7388};
     // 声明一个手机商品的小图数组
     private static int[] mThumbArray = {
-            R.drawable.iphone12_s,R.drawable.iphone12pro_s,R.drawable.mi10_s,R.drawable.mi10qingchunban_s,R.drawable.mi10zhizunjinianban_s,R.drawable.redmik30pro_s,R.drawable.huaweimate40pro_s,R.drawable.huaweip40pro_s
+            R.drawable.iphone12_s, R.drawable.iphone12pro_s, R.drawable.mi10_s, R.drawable.mi10qingchunban_s, R.drawable.mi10zhizunjinianban_s, R.drawable.redmik30pro_s, R.drawable.huaweimate40pro_s, R.drawable.huaweip40pro_s
     };
     // 声明一个手机商品的大图数组
     private static int[] mPicArray = {
-            R.drawable.iphone12,R.drawable.iphone12pro,R.drawable.mi10,R.drawable.mi10qingchunban,R.drawable.mi10zhizunjinianban,R.drawable.redmik30pro,R.drawable.huaweimate40pro,R.drawable.huaweip40pro
+            R.drawable.iphone12, R.drawable.iphone12pro, R.drawable.mi10, R.drawable.mi10qingchunban, R.drawable.mi10zhizunjinianban, R.drawable.redmik30pro, R.drawable.huaweimate40pro, R.drawable.huaweip40pro
     };
 
     // 获取默认的手机信息列表
